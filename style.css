@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root{
-    --cor-de-fundo: #F5004F;
-    --cor-primaria: #000000;
+    --cor-de-fundo: #f0306d;
+    --cor-primaria: #ffffff;
     --cor-secundaria: #0cdb0c;
     --fontes: "PT Serif", serif;
 }
@@ -10,10 +10,72 @@
 margin:0;
 padding:0;
 }
-
 body{
     background-color: var(--cor-de-fundo);
     color:var(--cor-primaria);
     font-family: var(--fonte);
+    height: 100vh; /* Altura da página */
+margin:0;
+}
+header{
+    background-color:var(--cor-primaria);
+    text-align: center;
+}
+h1{
+    font-size: 2rem;
+    color: var (--cor-primaria);
+}
+h1{
+    font-size: 2rem;
+    color:var(--cor-de-fundo);
+    font-weight: 700; /* PESO DA FONTE*/
+}
+
+nav{
+    display: flex; /* ORGNIZA AS TAGS 'FILHAS' EM UM FLEX-BOX*/
+    justify-content: center;
+    font-weight: 400;
+}
+nav a{
+    text-decoration: none;
+    color:var(--cor-de-fundo);
+    margin: 0 2rem 1rem 0;
+    font-size: 1.2rem;
 
 }
+nav a:hover{
+    text-decoration: underline;
+    transform: scale(0.9); /*Muda a escala*/
+    transition: transform 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
