@@ -1,81 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
 
 :root{
-    --cor-de-fundo: #f0306d;
-    --cor-primaria: #ffffff;
-    --cor-secundaria: #0cdb0c;
-    --fontes: "PT Serif", serif;
+    --cor-de-fundo:#ec80e3;
+    --cor-primaria: #f7f4ea;
+    --cor-secundaria: #3ef76c;
+    --fonte: "Sofadi One", sans-serif;
 }
 *{
-margin:0;
-padding:0;
+    margin: 0;
+    padding: 0;
 }
+
 body{
     background-color: var(--cor-de-fundo);
-    color:var(--cor-primaria);
+    color: var(--cor-primaria);
     font-family: var(--fonte);
-    height: 100vh; /* Altura da página */
-margin:0;
+    height: 100vh;
+    margin: 0;
 }
+
 header{
-    background-color:var(--cor-primaria);
+    background-color: var(--cor-primaria);
     text-align: center;
 }
+
 h1{
     font-size: 2rem;
-    color: var (--cor-primaria);
-}
-h1{
-    font-size: 2rem;
-    color:var(--cor-de-fundo);
-    font-weight: 700; /* PESO DA FONTE*/
+    color: var(--cor-de-fundo);
+    font-weight: 700;
 }
 
 nav{
-    display: flex; /* ORGNIZA AS TAGS 'FILHAS' EM UM FLEX-BOX*/
+    display: flex;
     justify-content: center;
     font-weight: 400;
 }
+
 nav a{
     text-decoration: none;
-    color:var(--cor-de-fundo);
+    color: var(--cor-de-fundo);
     margin: 0 2rem 1rem 0;
     font-size: 1.2rem;
-
 }
+
 nav a:hover{
     text-decoration: underline;
-    transform: scale(0.9); /*Muda a escala*/
+    transform: scale(1.3);
     transition: transform 1s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+span{
+    color: var(--cor-secundaria);
+    font-weight:bold;
+}
+footer{
+    text-align: center;
+    background-color: var(--cor-primaria);
+    color: var(--cor-de-fundo);
+}
+.graficos-container{
+    margin: 5rem;
+}
+.graficos-texto{
+    font-size: 1.3rem;
+    border: var(--cor-secundaria) solid 2px;
+    padding: 2rem;
+}
