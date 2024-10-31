@@ -30,6 +30,24 @@ const layout = {
             family: getCSS('--fonte'),
             size: 30
         }
+    } ,
+    xaxis:{
+        tickfont: tickfont,
+        tittle: 'Nome das Redes Sociais' , 
+        font:{
+            color:getCSS ('--cor-secundaria')
+        }
+    }
+
+    }
+    yaxis: {
+        tickfont: tickfont,
+        title:{
+            text: 'Milhões de usuŕios ativos'
+        }
+        tittle : 'Nome das Redes Sociais' , 
+        font: {
+            color:getCSS ('--cor-secundaria')
 
     }
 
@@ -40,5 +58,6 @@ const grafico = document.createElement('div');
 grafico.className = 'grafico';
 document.getElementById('graficos-container').appendChild(grafico);
 Plotly.newPlot(grafico,infos)
-}
+
 quantidadeDeUsuarios()
+}
